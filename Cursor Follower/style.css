@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(190, 198, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    anchor-name: --follower;
+}
+
+
+
+.box{
+    height: 200px;
+    width: 200px;
+}
+
+ .red{
+   background-color: red;
+}
+
+ .blue{
+   background-color: blue;
+}
+
+ .green{
+   background-color: green;
+}
+
+.box:hover{
+    anchor-name: --follower;
+}
+
+.anchor{
+    background-color: rgb(201, 185, 185);
+    border-radius: 10px;
+    position: absolute;
+    position-anchor: --follower;
+    top: anchor(top);
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    pointer-events: none;
+    transition: all 0.3s linear;
+    mix-blend-mode: difference;
+
+}
