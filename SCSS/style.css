@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+main section {
+  height: 100%;
+  flex-grow: 1;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  transition: all ease 0.8s;
+}
+main section:hover {
+  flex-grow: 2;
+}
+main section:nth-child(1) {
+  background-image: url("./ironman.jpeg");
+}
+main section:nth-child(2) {
+  background-image: url("./spider.jpeg");
+}
+main section:nth-child(3) {
+  background-image: url("./vanda.jpeg");
+}
+main section:nth-child(4) {
+  background-image: url("./thor.jpeg");
+}
+main section:nth-child(5) {
+  background-image: url("./captain.jpeg");
+}/*# sourceMappingURL=style.css.map */

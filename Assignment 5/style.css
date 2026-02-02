@@ -1,0 +1,279 @@
+@font-face {
+  font-family: drib;
+  src: url(WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: drib;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.main {
+  padding: 12px 33px;
+  width: 100%;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-left .logo {
+  height: 70px;
+}
+.nav-left a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav-right {
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.signup-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+.login-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+#hero-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 0px 40px;
+  margin-bottom: 30px;
+}
+.hero-left {
+  width: 57%;
+}
+.hero-left h1 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0d0c22;
+}
+.hero-left p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #555;
+}
+
+.toggles {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.toggles button {
+  padding: 10px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  background-color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all ease 0.3s;
+}
+.toggles button:hover{
+  background-color: #373639;
+  color: #fff;
+  border-color: #373639;
+}
+
+.hero-search-box {
+  width: 100%;
+  position: relative;
+}
+.hero-search-box input {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #f3f3f6;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+.hero-search-box:hover input {
+  border-color: pink;
+  background-color: white;
+}
+.hero-search-box button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ea4c89;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popular-tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: #333;
+}
+.popular-tags span {
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.popular-tags a {
+  text-decoration: none;
+  color: #555;
+  border: 1px solid #e0e0e0;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
+.popular-tags a:hover {
+  color: #0d0c22;
+  background-color: #e0e0e0;
+}
+
+.hero-right {
+  width: 33%;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.hero-right video {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+#filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.popular-btn, .filters-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #e7e7e9;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.filter-links {
+  display: flex;
+  gap: 50px;
+  font-size: 16px;
+}
+.filter-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.filter-links a:hover {
+  color: rgb(155, 155, 155);
+}
+
+.cards{
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+}
+
+.card{
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    margin-left: 35px;
+    position: relative;
+    overflow: hidden;
+    
+  
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(transparent, black);
+    bottom: -40%;
+    transition: all ease 0.5s;
+}
+
+.bottom h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.bottom h3{
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+
+.card:hover .bottom{
+   bottom: 0%;
+}
